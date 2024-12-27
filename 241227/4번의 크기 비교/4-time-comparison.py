@@ -1,0 +1,7 @@
+a = int(input())
+n = input().split()
+b,c,d,e = int(n[0]), int(n[1]), int(n[2]), int(n[3])
+print((a>b)*1)
+print((a>c)*1)
+print((a>d)*1)
+print((a>e)*1)
