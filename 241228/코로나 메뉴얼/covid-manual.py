@@ -20,5 +20,10 @@ elif b1 == "Y" and c1 == "Y":
         print("E")
     else:
         print("N")
+elif a1 == "Y" and b1 == "Y" and c1 == "Y":
+    if (a2 >=37 and b2 >= 37) or (a2 >=37 and c2 >= 37) or (b2 >=37 and c2 >= 37)
+        print("E")
+    else:
+        print("N")
 else:
     print("N")
