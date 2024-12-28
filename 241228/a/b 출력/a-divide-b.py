@@ -3,7 +3,7 @@ a, b = int(n[0]), int(n[1])
 
 print(f"{a//b}.", end="")
 
-a &= b
+a %= b
 
 for _ in range(20):
     a *= 10
