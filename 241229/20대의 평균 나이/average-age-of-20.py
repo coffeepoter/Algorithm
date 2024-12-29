@@ -1,6 +1,6 @@
 sum = 0
 cnt = 0
-while 1:
+while True:
     n = int(input())
     if n >= 30:
         break
