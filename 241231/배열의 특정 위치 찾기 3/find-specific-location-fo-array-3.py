@@ -3,4 +3,4 @@ arr = list(map(int, input().split()))
 if 0 in arr:
     arr = arr[:arr.index(0)]
 
-print(sum(arr))
+print(arr[-1] + arr[-2] + arr[-3])
