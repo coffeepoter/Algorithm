@@ -4,7 +4,7 @@ b = list(map(int, input().split()))
 res = False
 k = 0
 for i in range(n1):
-    if k > n2-1:
+    if k >= n2:
         break
     if a[i] == b[k]:
         k += 1
