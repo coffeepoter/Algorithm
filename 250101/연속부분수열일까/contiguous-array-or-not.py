@@ -1,17 +1,18 @@
 n1, n2 = map(int, input().split())
 a = list(map(int, input().split()))
 b = list(map(int, input().split()))
+x = 0
+y = x + n2
 res = False
-k = 0
-for i in range(n1):
-    if k >= n2:
-        break
-    if a[i] == b[k]:
-        k += 1
+
+for _ in range(n1-n2+1):
+    new_a = a[x:y]
+    if new_a == b:
         res = True
+        break
     else:
-        res = False
-        k = 0
+        x += 1
+        y += 1
 
 if res:
     print("Yes")
