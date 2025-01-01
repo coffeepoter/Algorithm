@@ -4,7 +4,7 @@ max_profit = 0
 
 for i in range(n):
     for j in range(i+1, n):
-        profit = (arr[i] - arr[j])*-1
+        profit = arr[j] - arr[i]
         if profit > max_profit:
             max_profit = profit
 
