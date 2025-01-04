@@ -9,7 +9,7 @@ for _ in range(q):
         s = s[-1] + s[:-1]
         print(s)
     elif query == 3:
-        s = list(s)
-        s.reverse()
-        print("".join(s))
+        arr = list(s)
+        arr.reverse()
+        print("".join(arr))
         
