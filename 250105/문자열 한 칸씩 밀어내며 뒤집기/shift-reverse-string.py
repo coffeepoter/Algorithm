@@ -14,6 +14,6 @@ for _ in range(q):
             arr.reverse()
             print("".join(arr))
     else:
-        s.reverse()
-        print(s)
-        
+        arr = list(s)
+        arr.reverse()
+        print("".join(arr))
