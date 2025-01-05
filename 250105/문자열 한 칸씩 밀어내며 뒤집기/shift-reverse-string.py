@@ -12,8 +12,10 @@ for _ in range(q):
         elif query == 3:
             arr = list(s)
             arr.reverse()
-            print("".join(arr))
+            s = "".join(arr)
+            print(s)
     else:
         arr = list(s)
         arr.reverse()
-        print("".join(arr))
+        s = "".join(arr)
+        print(s)
