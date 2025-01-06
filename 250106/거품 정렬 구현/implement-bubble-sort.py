@@ -1,12 +1,16 @@
 n = int(input())
 arr = list(map(int, input().split()))
 
-for i in range(n):
-    for j in range(i+1, n):
-        if arr[i] > arr[j]:
-            tmp = arr[i]
-            arr[i] = arr[j]
-            arr[j] = tmp
+def bubble_sort():
+    is_sorted = False
+    while not is_sorted:
+        is_sorted = True
+        for i in range(n-1):
+            if arr[i] > arr[i+1]:
+                arr[i], arr[i+1] = arr[i+1], arr[i]
+                is_sorted = False
+
+bubble_sort()
 
 for e in arr:
     print(e, end=" ")
