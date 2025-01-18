@@ -26,7 +26,7 @@ for i in range(len(arr)):
     elif arr[i] == ')':
         if s.empty():
             print("No")
-            break
+            continue
         else:
             s.pop()
 if s.empty():
